@@ -37,5 +37,33 @@
 //##############   Mathematical operations  ###############//
 let min=10;
 let max=20;
-let myRandomNuber=Math.random()*(max-min+1)+min;
-console.log(Math.floor(myRandomNuber));
+// let myRandomNuber=Math.random()*(max-min+1)+min;
+// console.log(Math.floor(myRandomNuber));
+
+//############ Star Book Task ###########//
+//Ans no 1
+// alert("Hello EveryOne")
+
+// Ans no 2
+let userName="Muhammad"
+// document.write(userName)
+
+// console.log(userName="Sufiyan");
+// console.log(userName);
+
+let testNumber=2+3;
+let myString= new String("string")
+// // console.log(testNumber);
+// console.log(myString.indexOf("s"));// index return karta he
+// console.log(myString.replace("string","Change"));// replace karne ke lye
+// console.log(myString.toLocaleUpperCase());
+
+
+let inputId=document.getElementById("myInp").value
+
+console.log(inputId);
+
+
+
+
+
