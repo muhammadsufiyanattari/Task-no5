@@ -33,3 +33,9 @@
 // aar[0]=20;
 // console.log(aar);
 // console.log(aar2);
+
+//##############   Mathematical operations  ###############//
+let min=10;
+let max=20;
+let myRandomNuber=Math.random()*(max-min+1)+min;
+console.log(Math.floor(myRandomNuber));
