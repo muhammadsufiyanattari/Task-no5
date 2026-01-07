@@ -52,6 +52,9 @@ let userName="Muhammad"
 // console.log(userName);
 
 let testNumber=2+3;
+let testNumber1=2*3;
+let testNumber2=2/3;
+let testNumber3=2-3;
 let myString= new String("string")
 // // console.log(testNumber);
 // console.log(myString.indexOf("s"));// index return karta he
@@ -59,9 +62,26 @@ let myString= new String("string")
 // console.log(myString.toLocaleUpperCase());
 
 
-let inputId=document.getElementById("myInp").value
+// let inputId=document.getElementById("myInp").value
 
-console.log(inputId);
+// // console.log(inputId);
+// console.log(testNumber);
+// console.log(testNumber1);
+// console.log(testNumber2);
+// console.log(testNumber3);
+// let myNum;
+// myNum=5
+// console.log((myNum+(1*2)+1)-12+4);
+let movieTicketRate=150;//Each
+let userInput=Number(prompt("Enter your Movie Ticket Quantity"))
+let Total=movieTicketRate*userInput
+// console.log(`
+//     1. Each Movie Ticket Price is ${movieTicketRate}.00
+//     2. Your Ticket Quantity is ${userInput}.00
+//       Total Amount in PKR is ${Total}.00
+//     `);
+
+
 
 
 
