@@ -35,8 +35,8 @@
 // console.log(aar2);
 
 //##############   Mathematical operations  ###############//
-let min=10;
-let max=20;
+// let min=10;
+// let max=20;
 // let myRandomNuber=Math.random()*(max-min+1)+min;
 // console.log(Math.floor(myRandomNuber));
 
@@ -45,17 +45,17 @@ let max=20;
 // alert("Hello EveryOne")
 
 // Ans no 2
-let userName="Muhammad"
+// let userName="Muhammad"
 // document.write(userName)
 
 // console.log(userName="Sufiyan");
 // console.log(userName);
 
-let testNumber=2+3;
-let testNumber1=2*3;
-let testNumber2=2/3;
-let testNumber3=2-3;
-let myString= new String("string")
+// let testNumber=2+3;
+// let testNumber1=2*3;
+// let testNumber2=2/3;
+// let testNumber3=2-3;
+// let myString= new String("string")
 // // console.log(testNumber);
 // console.log(myString.indexOf("s"));// index return karta he
 // console.log(myString.replace("string","Change"));// replace karne ke lye
@@ -72,15 +72,25 @@ let myString= new String("string")
 // let myNum;
 // myNum=5
 // console.log((myNum+(1*2)+1)-12+4);
-let movieTicketRate=150;//Each
-let userInput=Number(prompt("Enter your Movie Ticket Quantity"))
-let Total=movieTicketRate*userInput
+// let movieTicketRate=150;//Each
+// let userInput=Number(prompt("Enter your Movie Ticket Quantity"))
+// let Total=movieTicketRate*userInput
 // console.log(`
 //     1. Each Movie Ticket Price is ${movieTicketRate}.00
 //     2. Your Ticket Quantity is ${userInput}.00
 //       Total Amount in PKR is ${Total}.00
 //     `);
 
+// let tableLength=[0,1,2,3,4,5,6,7,8,9]
+// for (let i = 1; i <=tableLength.length; i++) {
+// document.write(`2 x ${i} = ${2*i}</br>`);
+
+// document.write(`3 x ${i} = ${3*i}</br>`);
+
+//     // console.log(i);
+    
+// }
+// console.log("hello");
 
 
 
