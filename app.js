@@ -98,40 +98,45 @@
 // let arr=["Pakista", "india","nepal","bangladesh"]
 
 //Shopping Card
-let product1=Number(prompt(`Islamin Cap Per Cap Rate is: 650/- Enter Quatity`))
-let product2=Number(prompt(`Islamin Books Per Book Rate is: 230/- Enter Quatity`))
+// let product1=Number(prompt(`Islamin Cap Per Cap Rate is: 650/- Enter Quatity`))
+// let product2=Number(prompt(`Islamin Books Per Book Rate is: 230/- Enter Quatity`))
 
  
-if (product1>0) {
-    document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
-        Quantity of Cap is ${product1} </br></br>
-        Total of Cap is ${650*product1}-/ </br></br>
-
+// if (product1>0 || product2>0) {
+//     document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
+//         Quantity of Cap is ${product1} </br></br>
+//         Total of Cap is ${650*product1}/- </br></br>
+//         Islamin Book Per Cap Rate is: 230/- </br> 
+//         Quantity of Book is ${product2} </br></br>
+//         Total of Book is ${230*product2}/- </br></br>
         
-        `)
-}
+//         `)
+// }
 
-else if (product1==0) {
-    document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
-        kya ap ko cap achi nahi Lagi</br>
-        
-        `)
-}
+// else if (product1==0||product2==0) {
+//     document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
+//         kya ap ko cap achi nahi Lagi</br>
+//         Islamin Book Per Cap Rate is: 230/- </br> 
+//         kya ap ko cap achi nahi Lagi
+//         `)
+// }
  
-if (product2>0) {
-    document.write(`Islamin Book Per Cap Rate is: 230/- </br> 
-        Quantity of Book is ${product2} </br></br>
-        Total of Book is ${230*product2}/- </br></br>
-        
-        
-        `)
-}
-else if (product2==0) {
-    document.write(`Islamin Book Per Cap Rate is: 230/- </br> 
-        kya ap ko cap achi nahi Lagi
-        
-        `)
-}
+
+let ObtainedMarks=Number(prompt(`Enter Obtained Marks`))
+let TotalMarks=Number(prompt(`Enter Total Marks`))
+let persontageFormula=ObtainedMarks/TotalMarks*100
+document.write(
+    
+    `
+     <h1> Marks Sheet</h1>
+     <p>Total Marks is ${TotalMarks}</p>
+     <p>Obtained Marks is ${ObtainedMarks}</p>
+     <h3>Persontage is ${persontageFormula}%</h3>
+
+    `
+)
+
+
  
 
 
