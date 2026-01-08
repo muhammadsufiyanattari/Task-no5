@@ -95,9 +95,44 @@
 
 
 // 8.1.2026
+// let arr=["Pakista", "india","nepal","bangladesh"]
+
+//Shopping Card
+let product1=Number(prompt(`Islamin Cap Per Cap Rate is: 650/- Enter Quatity`))
+let product2=Number(prompt(`Islamin Books Per Book Rate is: 230/- Enter Quatity`))
+
  
+if (product1>0) {
+    document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
+        Quantity of Cap is ${product1} </br></br>
+        Total of Cap is ${650*product1}-/ </br></br>
 
+        
+        `)
+}
 
+else if (product1==0) {
+    document.write(`Islamin Cap Per Cap Rate is: 650/- </br> 
+        kya ap ko cap achi nahi Lagi</br>
+        
+        `)
+}
+ 
+if (product2>0) {
+    document.write(`Islamin Book Per Cap Rate is: 230/- </br> 
+        Quantity of Book is ${product2} </br></br>
+        Total of Book is ${230*product2}/- </br></br>
+        
+        
+        `)
+}
+else if (product2==0) {
+    document.write(`Islamin Book Per Cap Rate is: 230/- </br> 
+        kya ap ko cap achi nahi Lagi
+        
+        `)
+}
+ 
 
 
 
