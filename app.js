@@ -131,7 +131,7 @@ document.write(
      <h1> Marks Sheet</h1>
      <p>Total Marks is ${TotalMarks}</p>
      <p>Obtained Marks is ${ObtainedMarks}</p>
-     <h3>Persontage is ${persontageFormula}%</h3>
+     <h3>Persontage is ${persontageFormula}%</h3> 
 
     `
 )
