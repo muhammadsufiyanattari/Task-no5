@@ -122,19 +122,28 @@
 // }
  
 
-let ObtainedMarks=Number(prompt(`Enter Obtained Marks`))
-let TotalMarks=Number(prompt(`Enter Total Marks`))
-let persontageFormula=ObtainedMarks/TotalMarks*100
-document.write(
+// let ObtainedMarks=Number(prompt(`Enter Obtained Marks`))
+// let TotalMarks=Number(prompt(`Enter Total Marks`))
+// let persontageFormula=ObtainedMarks/TotalMarks*100
+// document.write(
     
-    `
-     <h1> Marks Sheet</h1>
-     <p>Total Marks is ${TotalMarks}</p>
-     <p>Obtained Marks is ${ObtainedMarks}</p>
-     <h3>Persontage is ${persontageFormula}%</h3> 
+//     `
+//      <h1> Marks Sheet</h1>
+//      <p>Total Marks is ${TotalMarks}</p>
+//      <p>Obtained Marks is ${ObtainedMarks}</p>
+//      <h3>Persontage is ${persontageFormula}%</h3> 
 
-    `
-)
+//     `
+// )
+let dollar=Number(prompt("Please Enter in Amount In Dollar"))
+ 
+if (dollar>0) {
+    let convertInPKR=dollar*250
+    document.write(
+        `Amount in Dollar ${dollar}</br>
+        One Dollar is Equal in PKR is 250 Rupees<br/>
+        Total Amount in PKR ${convertInPKR}</br>`)
+}
 
 
  
