@@ -151,3 +151,10 @@
 
 
 
+let testNumber=2-3+3*2
+
+// console.log(inputId);
+console.log(testNumber);
+console.log(testNumber);
+console.log(testNumber);
+console.log(testNumber);
