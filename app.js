@@ -158,3 +158,20 @@ console.log(testNumber);
 console.log(testNumber);
 console.log(testNumber);
 console.log(testNumber);
+let cleanestCities = ["islamabad", "Mari", "sawat", "manshera", "mardan"];
+let cityToCheck=prompt("Eneter Cleanest City Name ").toLocaleLowerCase()
+ if (cityToCheck === cleanestCities[0]) {
+ alert("It's one of the cleanest cities");
+ }
+ else if (cityToCheck === cleanestCities[1]) {
+ alert("It's one of the cleanest cities");
+ }
+ else if (cityToCheck === cleanestCities[2]) {
+ alert("It's one of the cleanest cities");
+ }
+ else if (cityToCheck === cleanestCities[3]) {
+ alert("It's one of the cleanest cities");
+ }
+ else if (cityToCheck === cleanestCities[4]) {
+ alert("It's one of the cleanest cities");
+ }
