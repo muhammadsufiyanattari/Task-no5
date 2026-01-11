@@ -151,27 +151,37 @@
 
 
 
-let testNumber=2-3+3*2
+// let testNumber=2-3+3*2
 
-// console.log(inputId);
-console.log(testNumber);
-console.log(testNumber);
-console.log(testNumber);
-console.log(testNumber);
-let cleanestCities = ["islamabad", "Mari", "sawat", "manshera", "mardan"];
-let cityToCheck=prompt("Eneter Cleanest City Name ").toLocaleLowerCase()
- if (cityToCheck === cleanestCities[0]) {
- alert("It's one of the cleanest cities");
- }
- else if (cityToCheck === cleanestCities[1]) {
- alert("It's one of the cleanest cities");
- }
- else if (cityToCheck === cleanestCities[2]) {
- alert("It's one of the cleanest cities");
- }
- else if (cityToCheck === cleanestCities[3]) {
- alert("It's one of the cleanest cities");
- }
- else if (cityToCheck === cleanestCities[4]) {
- alert("It's one of the cleanest cities");
- }
+// // console.log(inputId);
+// console.log(testNumber);
+// console.log(testNumber);
+// console.log(testNumber);
+// console.log(testNumber);
+// let cleanestCities = ["islamabad", "Mari", "sawat", "manshera", "mardan"];
+// let cityToCheck=prompt("Eneter Cleanest City Name ").toLocaleLowerCase()
+//  if (cityToCheck === cleanestCities[0]) {
+//  alert("It's one of the cleanest cities");
+//  }
+//  else if (cityToCheck === cleanestCities[1]) {
+//  alert("It's one of the cleanest cities");
+//  }
+//  else if (cityToCheck === cleanestCities[2]) {
+//  alert("It's one of the cleanest cities");
+//  }
+//  else if (cityToCheck === cleanestCities[3]) {
+//  alert("It's one of the cleanest cities");
+//  }
+//  else if (cityToCheck === cleanestCities[4]) {
+//  alert("It's one of the cleanest cities");
+//  }
+
+let arr=["banana","mango","peach","orange"]
+arr.push("leachi")
+arr.push("watermelon")
+arr.pop()
+arr.unshift("apple")
+arr.unshift("bari")
+arr.shift("bari")
+console.log(arr);
+
