@@ -183,6 +183,8 @@ let arr=["banana","mango","peach","orange"]
 // arr.unshift("apple")
 // arr.unshift("bari")
 // arr.shift("bari")
-let copyArr=arr.slice(1,)//first index or secand index se ke agge jaha tak ke copy karhe us index se age ka nuber do
-console.log(copyArr);
+// let copyArr=arr.slice(1,)//first index or secand index se ke agge jaha tak ke copy karhe us index se age ka nuber do
+// console.log(copyArr);
 
+// arr.splice(0,0,"suitpotato")
+// console.log(arr);
