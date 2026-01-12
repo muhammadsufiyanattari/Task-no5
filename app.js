@@ -176,7 +176,7 @@
 //  alert("It's one of the cleanest cities");
 //  }
 
-let arr=["banana","mango","peach","orange"]
+// let arr=["banana","mango","peach","orange"]
 // arr.push("leachi")
 // arr.push("watermelon")
 // arr.pop()
@@ -188,3 +188,15 @@ let arr=["banana","mango","peach","orange"]
 
 // arr.splice(0,0,"suitpotato")
 // console.log(arr);
+let dollar=Number(prompt("Please Enter in Amount In Dollar"))
+ 
+if (dollar>0) {
+    let convertInPKR=dollar*250
+    document.write(
+        `Amount in Dollar ${dollar}</br>
+        One Dollar is Equal in PKR is 250 Rupees<br/>
+        Total Amount in PKR ${convertInPKR}</br>`)
+}
+
+
+ 
