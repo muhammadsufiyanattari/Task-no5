@@ -188,21 +188,21 @@
 
 // arr.splice(0,0,"suitpotato")
 // console.log(arr);
-let dollar=Number(prompt("Please Enter in Amount In Dollar"))
+// let dollar=Number(prompt("Please Enter in Amount In Dollar"))
  
-if (dollar>0) {
-    let convertInPKR=dollar*250
-    document.write(
-        `Amount in Dollar ${dollar}</br>
-        One Dollar is Equal in PKR is 250 Rupees<br/>
-        Total Amount in PKR ${convertInPKR}</br>`)
-}
+// if (dollar>0) {
+//     let convertInPKR=dollar*250
+//     document.write(
+//         `Amount in Dollar ${dollar}</br>
+//         One Dollar is Equal in PKR is 250 Rupees<br/>
+//         Total Amount in PKR ${convertInPKR}</br>`)
+// }
 
 
- for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+//  for (let index = 0; index < array.length; index++) {
+    // const element = array[index];
     
- }
+//  }
 // Palindrome checker: enter a word or phrase to check (non-alphanumeric ignored)
 let palInput = prompt("Enter a word or phrase to check for palindrome:");
 if (palInput !== null) {
