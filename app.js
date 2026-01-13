@@ -199,4 +199,14 @@ if (dollar>0) {
 }
 
 
- 
+ for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+ }
+// Palindrome checker: enter a word or phrase to check (non-alphanumeric ignored)
+let palInput = prompt("Enter a word or phrase to check for palindrome:");
+if (palInput !== null) {
+    const normalized = palInput.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const isPalindrome = normalized === normalized.split("").reverse().join("");
+    document.write(`<p>"${palInput}" is ${isPalindrome ? "" : "not "}a palindrome.</p>`);
+}
