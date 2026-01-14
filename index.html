@@ -6,9 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <input type="text"  value="nahi" name="" id="myInp"> -->
-    <!-- <input type="submit"  id=""> -->
-     
+    <div style="font-family: Arial, Helvetica, sans-serif; max-width:480px;margin:48px auto;padding:20px;border:1px solid #ddd;border-radius:8px;">
+        <h2 style="margin-top:0">Random Password Generator</h2>
+        <div style="margin-bottom:10px">
+            <label>Length: <input id="pw-length" type="number" value="12" min="4" max="128" style="width:80px"></label>
+        </div>
+        <div style="margin-bottom:10px">
+            <label><input id="pw-lower" type="checkbox" checked> Lowercase</label>
+            <label style="margin-left:10px"><input id="pw-upper" type="checkbox" checked> Uppercase</label>
+            <label style="margin-left:10px"><input id="pw-number" type="checkbox" checked> Numbers</label>
+            <label style="margin-left:10px"><input id="pw-symbol" type="checkbox"> Symbols</label>
+        </div>
+        <div style="margin-bottom:10px">
+            <button id="generate-btn">Generate</button>
+            <button id="copy-btn" style="margin-left:8px">Copy</button>
+        </div>
+        <div>
+            <input id="pw-output" readonly style="width:100%;padding:8px;font-family:monospace" placeholder="Your password will appear here">
+        </div>
+    </div>
+
     <script src="./app.js"></script>
 </body>
 </html>

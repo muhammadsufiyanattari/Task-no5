@@ -204,9 +204,92 @@
     
 //  }
 // Palindrome checker: enter a word or phrase to check (non-alphanumeric ignored)
-let palInput = prompt("Enter a word or phrase to check for palindrome:");
-if (palInput !== null) {
-    const normalized = palInput.toLowerCase().replace(/[^a-z0-9]/g, "");
-    const isPalindrome = normalized === normalized.split("").reverse().join("");
-    document.write(`<p>"${palInput}" is ${isPalindrome ? "" : "not "}a palindrome.</p>`);
-}
+// let palInput = prompt("Enter a word or phrase to check for palindrome:");
+// if (palInput !== null) {
+//     const normalized = palInput.toLowerCase().replace(/[^a-z0-9]/g, "");
+//     const isPalindrome = normalized === normalized.split("").reverse().join("");
+//     document.write(`<p>"${palInput}" is ${isPalindrome ? "" : "not "}a palindrome.</p>`);
+// }
+// for student
+
+// ---------- Password generator ----------
+document.addEventListener('DOMContentLoaded', () => {
+    const pwLengthInput = document.getElementById('pw-length');
+    const pwLower = document.getElementById('pw-lower');
+    const pwUpper = document.getElementById('pw-upper');
+    const pwNumber = document.getElementById('pw-number');
+    const pwSymbol = document.getElementById('pw-symbol');
+    const generateBtn = document.getElementById('generate-btn');
+    const output = document.getElementById('pw-output');
+    const copyBtn = document.getElementById('copy-btn');
+
+    function getRandomInt(max) {
+        if (window.crypto && crypto.getRandomValues) {
+            const arr = new Uint32Array(1);
+            crypto.getRandomValues(arr);
+            return arr[0] % max;
+        }
+        return Math.floor(Math.random() * max);
+    }
+
+    const chars = {
+        lower: 'abcdefghijklmnopqrstuvwxyz',
+        upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        number: '0123456789',
+        symbol: '!@#$%^&*()_+[]{}|;:,.<>?'
+    };
+
+    function generatePassword(length, options) {
+        let pool = '';
+        if (options.lower) pool += chars.lower;
+        if (options.upper) pool += chars.upper;
+        if (options.number) pool += chars.number;
+        if (options.symbol) pool += chars.symbol;
+        if (!pool) return '';
+
+        let pass = '';
+        for (let i = 0; i < length; i++) {
+            pass += pool.charAt(getRandomInt(pool.length));
+        }
+        return pass;
+    }
+
+    generateBtn.addEventListener('click', () => {
+        const length = Number(pwLengthInput.value) || 12;
+        if (length < 1) {
+            alert('Please enter a valid length');
+            return;
+        }
+        const options = {
+            lower: pwLower.checked,
+            upper: pwUpper.checked,
+            number: pwNumber.checked,
+            symbol: pwSymbol.checked
+        };
+        if (!options.lower && !options.upper && !options.number && !options.symbol) {
+            alert('Select at least one character type');
+            return;
+        }
+        output.value = generatePassword(length, options);
+    });
+
+    copyBtn.addEventListener('click', async () => {
+        const text = output.value;
+        if (!text) return;
+        try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(text);
+            } else {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+            }
+            alert('Password copied to clipboard');
+        } catch (e) {
+            alert('Copy failed');
+        }
+    });
+});
