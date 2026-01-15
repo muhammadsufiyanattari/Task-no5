@@ -3,7 +3,6 @@
     justify-content: center;
 }
 .myDin img{
-    width:"700px";
-    height: "1px";
-    background-color: blue;
+    width: 400px;
+    
 }
