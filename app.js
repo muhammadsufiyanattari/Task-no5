@@ -293,3 +293,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+//If a match is found, the value of the flag is changed. At the end, if the flag hasn't been
+// changed—if it still has the original value of "no"—it means no match was found, and so we
+// display an alert saying the city isn't on the list
+
