@@ -294,7 +294,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//If a match is found, the value of the flag is changed. At the end, if the flag hasn't been
-// changed—if it still has the original value of "no"—it means no match was found, and so we
-// display an alert saying the city isn't on the list
-
+let arr=["lemon","orange","Grayfruit"]
+for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    console.log(element);
+    
+    
+}
+// block level element
+ 
+// console.log(element); element is not define
