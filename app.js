@@ -301,6 +301,14 @@ for (let i = 0; i < arr.length; i++) {
     
     
 }
+let arr2=["orange","Grayfruit"]
+for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    console.log(arr2.pop());
+    console.log(arr2.push("lemon mint"));
+    
+    
+}
 // block level element
  
 // console.log(element); element is not define
