@@ -309,6 +309,6 @@ for (let i = 0; i < arr.length; i++) {
     
     
 }
-// block level element
+// reson of block level element return element is no define
  
 // console.log(element); element is not define
