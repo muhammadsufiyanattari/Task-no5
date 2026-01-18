@@ -297,18 +297,35 @@ document.addEventListener('DOMContentLoaded', () => {
 let arr=["lemon","orange","Grayfruit"]
 for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
-    console.log(element);
+    // console.log(element);
     
     
 }
 let arr2=["orange","Grayfruit"]
 for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
-    console.log(arr2.pop());
-    console.log(arr2.push("lemon mint"));
+    // console.log(arr2.pop());
+    // console.log(arr2.push("lemon mint"));
     
     
 }
 // reson of block level element return element is no define
  
 // console.log(element); element is not define
+
+
+
+//distructurning in array or object
+//let sapose
+// let obj={
+//     myName:"mhammad",
+//     className:"Unversity Secand Semister",
+//     campusName: "Zone East",
+//     rollNumber: "93"
+
+// }
+// let {myName,className,campusName,rollNumber="33"}=obj
+
+// console.log(myName);
+// console.log(className);
+// console.log(rollNumber);
