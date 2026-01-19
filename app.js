@@ -329,3 +329,56 @@ for (let i = 0; i < arr.length; i++) {
 // console.log(myName);
 // console.log(className);
 // console.log(rollNumber);
+
+//========== TIME COUNTER (STOPWATCH) ==========//
+let timerInterval = null;
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+
+function formatTime(h, m, s) {
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+function updateDisplay() {
+    const display = document.getElementById('timer-display');
+    if (display) {
+        display.textContent = formatTime(hours, minutes, seconds);
+    }
+}
+
+function startTimer() {
+    if (timerInterval) return;
+    timerInterval = setInterval(() => {
+        seconds++;
+        if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+            if (minutes === 60) {
+                minutes = 0;
+                hours++;
+            }
+        }
+        updateDisplay();
+    }, 1000);
+}
+
+function pauseTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+}
+
+function resetTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    updateDisplay();
+}
+
+// Usage Example:
+// startTimer();  - To start the timer
+// pauseTimer();  - To pause the timer
+// resetTimer();  - To reset the timer
+// updateDisplay(); - To display time in HTML element with id="timer-display"
