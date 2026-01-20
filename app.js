@@ -378,7 +378,34 @@ function resetTimer() {
 }
 
 // Usage Example:
-// startTimer();  - To start the timer
-// pauseTimer();  - To pause the timer
-// resetTimer();  - To reset the timer
-// updateDisplay(); - To display time in HTML element with id="timer-display"
+
+startTimer(); // To start the timer
+pauseTimer();  // To pause the timer
+resetTimer();   //To reset the timer
+ updateDisplay(); //- To display time in HTML element with id="timer-display"
+
+//========== COUNTER ==========//
+let counterValue = 0;
+const counterDisplay = document.getElementById('counter-display');
+const increaseBtn = document.getElementById('counter-increase');
+const decreaseBtn = document.getElementById('counter-decrease');
+const resetBtn = document.getElementById('counter-reset');
+
+function updateCounterDisplay() {
+    counterDisplay.textContent = counterValue;
+}
+
+increaseBtn.addEventListener('click', () => {
+    counterValue++;
+    updateCounterDisplay();
+});
+
+decreaseBtn.addEventListener('click', () => {
+    counterValue--;
+    updateCounterDisplay();
+});
+
+resetBtn.addEventListener('click', () => {
+    counterValue = 0;
+    updateCounterDisplay();
+});
