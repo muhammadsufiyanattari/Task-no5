@@ -409,3 +409,7 @@ resetBtn.addEventListener('click', () => {
     counterValue = 0;
     updateCounterDisplay();
 })
+
+
+
+// And  than go on React js in nest class 
