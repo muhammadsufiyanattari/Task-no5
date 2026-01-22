@@ -427,3 +427,10 @@ resetBtn.addEventListener('click', () => {
 // And  than go on React js in nest class 
 //first lesson in react 
 // react is javascript librery 
+
+// what is the different between librery and frame Work
+// multiple librey use to make One site
+//frame is just like a big pakage for language user 
+
+
+
