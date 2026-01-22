@@ -425,3 +425,5 @@ resetBtn.addEventListener('click', () => {
 
 
 // And  than go on React js in nest class 
+//first lesson in react 
+// react is javascript librery 
