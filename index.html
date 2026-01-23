@@ -3,37 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Note Taking App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div style="font-family: Arial, Helvetica, sans-serif; max-width:480px;margin:48px auto;padding:20px;border:1px solid #ddd;border-radius:8px;">
-        <h2 style="margin-top:0">Random Password Generator</h2>
-        <div style="margin-bottom:10px">
-            <label>Length: <input id="pw-length" type="number" value="12" min="4" max="128" style="width:80px"></label>
-        </div>
-        <div style="margin-bottom:10px">
-            <label><input id="pw-lower" type="checkbox" checked> Lowercase</label>
-            <label style="margin-left:10px"><input id="pw-upper" type="checkbox" checked> Uppercase</label>
-            <label style="margin-left:10px"><input id="pw-number" type="checkbox" checked> Numbers</label>
-            <label style="margin-left:10px"><input id="pw-symbol" type="checkbox"> Symbols</label>
-        </div>
-        <div style="margin-bottom:10px">
-            <button id="generate-btn">Generate</button>
-            <button id="copy-btn" style="margin-left:8px">Copy</button>
-        </div>
-        <div>
-            <input id="pw-output" readonly style="width:100%;padding:8px;font-family:monospace" placeholder="Your password will appear here">
-        </div>
-    </div> -->
+    <div class="container">
+      <header class="header">
+        <h1>📝 My Notes</h1>
+        <p>Keep track of your thoughts and ideas</p>
+      </header>
 
-    <div class="clock-container">
-      <h2>Digital Clock</h2>
-      <div class="clock-display" id="clock">00:00:00</div>
-      <div class="date-display" id="date"></div>
+      <div class="input-section">
+        <input
+          type="text"
+          id="noteTitle"
+          placeholder="Note Title..."
+          class="note-title-input"
+        />
+        <textarea
+          id="noteContent"
+          placeholder="Write your note here..."
+          class="note-content-input"
+        ></textarea>
+        <button id="addBtn" class="btn btn-primary">Add Note</button>
+      </div>
+
+      <div class="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search notes..."
+          class="search-input"
+        />
+      </div>
+
+      <div class="notes-stats">
+        <p>Total Notes: <span id="noteCount">0</span></p>
+      </div>
+
+      <div id="notesList" class="notes-list">
+        <!-- Notes will be added here dynamically -->
+      </div>
+
+      <div id="emptyState" class="empty-state">
+        <p>✨ No notes yet. Create your first note!</p>
+      </div>
     </div>
-    <!-- <div class="myDin"><img width="" src="./background.png" alt=""></div> -->
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

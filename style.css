@@ -5,46 +5,226 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
 }
 
-.clock-container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  padding: 40px;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
   text-align: center;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  max-width: 500px;
+  color: white;
+  margin-bottom: 40px;
 }
 
-.clock-container h2 {
-  color: #ffffff;
-  margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 2px;
+.header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.clock-display {
-  font-size: 72px;
-  font-weight: bold;
-  color: #00ff88;
-  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
-  margin-bottom: 20px;
-  font-family: "Courier New", monospace;
-  letter-spacing: 8px;
-}
-
-.date-display {
+.header p {
   font-size: 18px;
-  color: #ffffff;
-  font-weight: 300;
-  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.input-section {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.note-title-input,
+.note-content-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.note-title-input {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.note-title-input:focus,
+.note-content-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.note-content-input {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-danger {
+  background: #ff6b6b;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.btn-danger:hover {
+  background: #ff5252;
+}
+
+.btn-edit {
+  background: #4ecdc4;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  background: #45b8af;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4ecdc4;
+  box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+}
+
+.notes-stats {
+  color: white;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.note-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.note-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.note-content {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.note-date {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.note-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .notes-list {
+    grid-template-columns: 1fr;
+  }
+
+  .input-section {
+    padding: 20px;
+  }
 }
