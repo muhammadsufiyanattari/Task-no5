@@ -518,3 +518,11 @@ resetBtn.addEventListener("click", () => {
 // what is the different between librery and frame Work
 // multiple librey use to make One site
 //frame is just like a big pakage for language user
+
+ function checkForPopBlocker() {
+ var testPop = window.open("", "","width=100,height=100");
+ if (testPop === null) {
+ alert("Please disable your popup blocker.");
+ }
+ testPop.close();
+ }
